@@ -39,6 +39,8 @@ body,html {
     border: none;
 }
 
+
+
 .btn {
     margin: 3px;
     background-color: #420000;
@@ -79,10 +81,21 @@ body,html {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    overflow-y: auto;
-    overflow-x: auto;
     padding-right: 10px;
     padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.tabcontents{
+    overflow-y: auto;
+    overflow-x: auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
     padding-bottom: 20px;
 }
 
@@ -110,11 +123,20 @@ body,html {
 #tableholder {
     
     background-color: #dddddd;
-    margin-top: 60px;
+    z-index: inherit;
+    margin-top: 0px;
     margin-right: 5px;
     overflow: auto;
 }
 
+#tableholder2 {
+    
+    background-color: #dddddd;
+    z-index: inherit;
+    margin-top: 0px;
+    margin-right: 5px;
+    overflow: auto;
+}
 
 
 table {
@@ -144,7 +166,7 @@ table tr td:nth-of-type(2) { /* Select the 3rd td */
 /*form input styling*/
 
 
-select{
+input{
     margin-top: 20px;
     background-color: #101010;
     color: gray;
@@ -153,7 +175,7 @@ select{
     border-radius: 5px;
 }
 
-select:focus{
+input:focus{
     background-color: #f5f5f5;
     color: #101010;
 }
@@ -331,3 +353,42 @@ a.specialLink {
     text-decoration: none;
 }
 
+
+ /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tablinks {
+  background-color: #420000;
+    color: #dddddd;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+    border-radius: 5px 25px 0px 0px;
+}
+
+/* Change background color of buttons on hover */
+.tablinks:hover {
+  background-color: #AA5757;
+}
+
+/* Create an active/current tablink class */
+.tablinks.active {
+  background-color: #AA5757;
+
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+} 
