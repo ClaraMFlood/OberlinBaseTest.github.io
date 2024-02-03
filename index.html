@@ -39,11 +39,13 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
-                  <li><button class="btn" id="oberlinArch"><i class="fas fa-scroll"></i><a id= "oberlinArchLink" href="https://www.oberlinlibstaff.com/omeka_oca/b_buildings" target="_blank"> Oberlin Archives</a></button></li>
-                <li><button class="btn" id="buildingDirec"><i class="fas fa-building"></i> Structure Directory</button></li>
+                  <li><button class="btn" id="helpbtn"><i class="fas fa-question-circle"></i> Using the Maps</button></li>
                 <li><button class="btn" id="timebtn"><i class="fas fa-history"></i> Choose Year</button></li>
-                  <li><button class="btn" id="infobtn"><i class="fas fa-info-circle"></i><a href="info.html" target="_blank" class="specialLink"> Info</a></button></li>
-                <li><button class="btn" id="helpbtn"><i class="fas fa-question-circle"></i> Help</button></li>
+                <li><button class="btn" id="buildingDirec"><i class="fas fa-building"></i> Structure Directory</button></li>
+                
+                  <li><button class="btn" id="infobtn"><i class="fas fa-info-circle"></i><a href="info.html" target="_blank" class="specialLink"> About the Project</a></button></li>
+                  
+                
               </ul>
 
             </div><!--/.navbar-collapse -->
@@ -52,12 +54,30 @@
         
         <div id="popup1" class="overlay">
             <div class="popup">
-                <h2>Title of Popup</h2>
+                <h2>Using the Maps</h2>
                 <a class="close" href="#">×</a>
                 <div class="content">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To navigate around the map, you can click and drag with your mouse to move the map laterally. To enlarge or shrink it, use the + and - in the lower right corner, or the globe button to recenter the map to its original position <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To gain information about a structure, simply click on it on the map and a popup will open with information. If you are browsing the Building Archives table and are interested in seeing a particular structure on the map, you can simply click on the structure's title in the table and the map will zoom to its location. <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;More info like this here? 
+                    
+                    <p>The site defaults to the map for 1833; use the <i class="fas fa-history"></i> Choose Year widget to change the date. </p>
+                    
+                    <p><strong>To move the map:</strong> click and drag your mouse.  </p>
+
+
+                    <p><strong>To zoom:</strong> use the <i class="far fa-plus-square"></i> and <i class="far fa-minus-square"></i> buttons or the scroll wheel on your mouse.</p>
+                    <p><strong>To recenter:</strong> use the globe <i class="fas fa-globe"></i> button</p>
+                       
+                    <p><strong>To add grid:</strong> click on the layers <i class="fas fa-layer-group"></i> button </p> 
+                    <p><strong>To identify structure:</strong> click on a structure to find its name.</p>
+                    <p><strong>To zoom to a structure:</strong> click on the structure's name in the <i class="fas fa-building"></i> Structure Directory</p>
+                    <p><strong>New College Structure:</strong> indicates the year the structure was built, or acquired by the College.</p>
+                    <p><strong>Disappeared structures: </strong>structures are removed from the map after they were demolished or sold by the College.</p>
+
+                    <p><strong>Structure Directory:</strong> this is a table of all College structures (buildings, fields, etc.).  For each structure it includes the name, year built or acquired, grid location, and a link to more information on the Architecture of Oberlin College resource, created and maintained by the Oberlin College Archives. </p>
+                        
+
+    
+                        
+
                 </div>
             </div>
         </div>
@@ -297,6 +317,7 @@
                                <p><strong>Click the Year or Name headers to sort the table.</strong></p>
                                 <p>The first time you click, the sorting direction is ascending (A to Z).</p>
                                 <p>Click again, and the sorting direction will be descending (Z to A).</p>
+                                <p>Information about each structure is provided by the Architecture of Oberlin College guide, created and maintained by the Oberlin College Archives</p>
 
                                 <p><strong>Click the building name to zoom to it on the map.</strong></p>
 
@@ -319,6 +340,7 @@
                                    <p><strong>Click the Year or Name headers to sort the table.</strong></p>
                                     <p>The first time you click, the sorting direction is ascending (A to Z).</p>
                                     <p>Click again, and the sorting direction will be descending (Z to A).</p>
+                                <p>Information about each structure is provided by the Architecture of Oberlin College guide, created and maintained by the Oberlin College Archives</p>
                                 
                                 <table id="allTable">
                                   <tr>
