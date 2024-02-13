@@ -30,7 +30,10 @@ body,html {
 .navbar-brand {
     color: #dddddd !important;
     font-size: 15px !important;
+    position: absolute;
 }
+
+
 
 .menu {
     background-color: #800000;
@@ -222,11 +225,7 @@ input:focus{
 }
 
 
-.popup .content {
-    /*overflow: auto;*/
-}
 
-/*end styling popup*/
 
 /* styling time slider */
 
@@ -306,11 +305,13 @@ h3{
   background: #e8e8e8;
   border-radius: 5px;
   width: 50%;
+    height: 75%;
   position: relative;
     z-index: 1000;
     font-family: 'mukta', sans-serif;
     line-height: 1.5;
-    font-size: 1.2vw;
+    font-size: 15px;
+    overflow: auto;
 }
 
 .popup h2 {
@@ -335,9 +336,6 @@ h3{
 .popup .close:hover {
   color: #50326E;
     
-}
-.popup .content {
-  /*overflow: auto;*/
 }
 
 /*end styling popup*/
