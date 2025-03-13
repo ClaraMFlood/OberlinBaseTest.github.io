@@ -12373,9 +12373,19 @@ function GenerateTable() {
 
             //console.log(buildingsArray[i].ARCHIVE)
             var linkPrep = buildingsArray[i].ARCHIVE
+            console.log("test");
+            console.log(linkPrep);
+        if (linkPrep == "N/A"){
+            cell.innerHTML = "No Archive Link Available";
+            var cell = row.insertCell(-1);
+            cell.innerHTML = (buildingsArray[i].GRIDLETTER) + (buildingsArray[i].GRIDNUM);
+        }
+        else {
             cell.innerHTML = '<a href="' + linkPrep + '" target="_blank">Archive Link</a>'; 
             var cell = row.insertCell(-1);
             cell.innerHTML = (buildingsArray[i].GRIDLETTER) + (buildingsArray[i].GRIDNUM);
+        }
+            
 
     }
 
